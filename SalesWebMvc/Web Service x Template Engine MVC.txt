@@ -1,0 +1,30 @@
+Aplicação com Web Service:
+
+Nas aplicações web service, temos o backend e o frontend, comumente numa Single Page Application. O Backend feito em determinada linguagem disponibiliza uma API RESTful, o backend é composto de um model feito na mesma linguagem, que conversa com os controladores REST, escritos também na mesma linguagem, a conversa é feito por objetos desta linguagem. Os controladores são preparados para responder requisições, recebendo dados na forma de param http, json etc, e convertem esses dados para objetos da linguagem de backend, e depois devolvem essa resposta, geralmente como Json, para o frontend que é separado, construido em HTML/CSS/JS/LibsJS.
+
+
+Aplicações com Template Engine:
+
+O Backend tem mais responsabilidades, inclusive de construir as telas, difentente do Web Service onde tudo é bem separado.
+
+Ao estar no navegador, abrindo a página da aplicação, se tem a possibilidade de fazer requisições para o sistema, porém neste caso, a requisição será feita para o controlador que irá conversar com o Model, ambos feitos na mesma linguagem de backend, e os controladores também vão estar conversando com o sistema de template, que por sua vez, também vai lidar com a linguagem de backend, tendo uma integração forte com o controller, o sistema de template então ira montar a página de resposta para o navegador, enviando como resposta a tela montada, diferente do web service, onde o sistema responde apenas os dados e o JS era responsavel por montar a tela com html e css, no caso do template engine, a resposta já é o HTML montado.
+
+
+MVC:
+
+Model: Serve para manter as estruturas dos dados e suas transformações, também chamado de Domain Model, muitas vezes também chamado de o sistema, sendo a lógica do negócio, a representação do sistema.
+Composto por Services e Entities.Pode ter também uma comunicação com objetos Repositories, que acessam dados persistentes como o BD.
+
+Controller: Receber e tratar interações do usuário com o sistema, sendo o intermediário entre o sistema e as views.
+
+View: Definir a estrutura e comportamentos da tela.
+
+Comunicação entre as camadas MVC:
+
+Ação do usuário -> Views -> Controller -> Model(Camada de serviços / Camada de acesso a dados) -> Controller -> Views.
+
+Para se trabalhar com Web Service, podemos utilizar tecnologias FrontEnd de libs JS, tal como React, Vue.Js, Angular e Jquery (etc).
+
+No caso de Template Engine, podemos trabalhar com Spring/ThimeLeaf(Java), ASP.NET CORE MVC(RAZOR), Laravel, Blade(PHP).
+
+
