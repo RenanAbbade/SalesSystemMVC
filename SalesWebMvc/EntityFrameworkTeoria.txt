@@ -1,0 +1,11 @@
+Entity Framework
+
+Ferramenta de mapeamento de objeto relacional, que visa facilitar a comunicação entre diferentes paradigmas, no caso o de orientação a objetos, com o de relacionamentos de objetos, utilizado nos bancos de dados.
+
+Para trabalhar com Entity Framework, deverá utilizar DbContext que encapsula uma sessão do banco de dados, representado por DbSet.
+
+Processo geral para se executar operações:
+
+LINQ(Funções com expressões Lambda) -> DbSet -> SQL -> BD
+
+

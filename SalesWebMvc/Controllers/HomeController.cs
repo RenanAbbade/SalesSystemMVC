@@ -17,14 +17,18 @@ namespace SalesWebMvc.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "My First ASP.NET MVC APP IN C# .NET CORE";
+
+            ViewData["Author"] = "Renan Abbade";
 
             return View();
         }
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "See my others projects in my GitHub page!";
+
+            ViewData["GitHubAddress"] = "https://github.com/RenanAbbade/";
 
             return View();
         }
